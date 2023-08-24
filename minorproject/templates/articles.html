@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<style>
+    body{
+        background-image : url("https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+        background-repeat : no-repeat;
+        background-size : cover;
+    }
+</style>
+
+  <h1>Articles</h1>
+  <ul class="list-group">
+    {% for article in articles %}
+      <li class="list-group-item"><a href="article/{{article.id}}">{{article.title}}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

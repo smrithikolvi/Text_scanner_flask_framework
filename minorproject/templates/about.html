@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<style>
+    body{
+        background-image : url("https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200");
+        background-repeat : no-repeat;
+        background-size : cover ;
+    }
+</style>
+
+  <h1>About Application</h1>
+  <h3>Functionalities</h3>
+  <ul class="list-group">
+  <li class="list-group-item">Uploading the Image</li>
+  <li class="list-group-item">Extracting Text</li>
+  <li class="list-group-item">Save,Edit,Delete the text extracted</li>
+</ul>
+  <h3>HOW TO USE ??</h3>
+  <ul class="list-group">
+  <li class="list-group-item"><b> STEP 1:</b> Go to UPLOAD IMAGE for uploading the image to be extracted</li>
+  <li class="list-group-item"><b> STEP 2:</b> Copy the text in RESULT appeared</li>
+  <li class="list-group-item"><b> STEP 3:</b> Go to DASHBOARD </li>
+  <li class="list-group-item"><b> STEP 4:</b> Click on ADD ARTICLE and save with ur file name</li>
+  <li class="list-group-item"><b> STEP 5:</b> U can ADD new article // EDIT or DELETE the articles u needed</li>
+</ul>
+{% endblock %}
